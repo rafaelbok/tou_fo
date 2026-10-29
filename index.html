@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111014">
+  <meta name="description" content="O novo site da Touro Folia está em construção. Em breve, novidades!">
+  <title>Touro Folia | Site em construção</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; background: radial-gradient(ellipse 65% 55% at 50% 32%, #352023 0%, #191316 52%, #100f12 100%); color: #fff; }
+    body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .24; background: linear-gradient(120deg, transparent 0 46%, #9f1b20 50%, transparent 54%); filter: blur(100px); }
+    main { position: relative; width: min(100%, 650px); padding: 44px 24px 72px; text-align: center; }
+    .logo { display: block; width: min(265px, 63vw); height: auto; aspect-ratio: 994 / 1024; object-fit: contain; margin: 0 auto 42px; filter: drop-shadow(0 16px 38px rgba(0,0,0,.35)); }
+    .eyebrow { margin: 0 0 14px; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .25em; color: #f28a8a; }
+    h1 { margin: 0; font-size: clamp(2rem, 5.5vw, 3.4rem); font-weight: 800; line-height: 1.12; letter-spacing: -.04em; }
+    .description { max-width: 440px; margin: 22px auto 0; font-size: clamp(.98rem, 2.2vw, 1.1rem); line-height: 1.65; color: #c9c0c3; }
+    .accent { display: block; width: 48px; height: 4px; border-radius: 10px; background: #d72028; margin: 30px auto 0; }
+    footer { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; font-size: .76rem; color: #9b9194; }
+    @media (max-height: 670px) { .logo { width: min(190px, 44vw); margin-bottom: 22px; } main { padding-top: 25px; padding-bottom: 65px; } }
+    @media (prefers-reduced-motion: no-preference) { main { animation: appear .7s ease-out both; } @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } } }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="assets/touro-folia.png" alt="Logo Touro Folia" width="994" height="1024">
+    <p class="eyebrow">Estamos preparando novidades</p>
+    <h1>Site em construção</h1>
+    <p class="description">Nosso novo espaço está chegando. Em breve, estaremos de volta com novidades para você!</p>
+    <span class="accent" aria-hidden="true"></span>
+  </main>
+  <footer>© Touro Folia</footer>
+</body>
+</html>
